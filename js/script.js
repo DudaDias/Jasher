@@ -1,19 +1,22 @@
-function login(){
+
+var action = document.querySelector('input[type="submit"]')
+
+action.onclick = function login(){
   
-    let user = prompt("Informe o nome de usuário:");
-    console.log(user);
- 
-    let senha = prompt("Informe sua senha:");
-    console.log(senha);
+    var user = document.querySelector("#user");
+    var userValue = user.value;
+    var senha = document.querySelector("#senha");
+    var senhaValue = senha.value;
+    console.log(userValue);
+    console.log(senhaValue);
 
-
-    if(user == 'professor' && senha == 456) {
+    if(userValue == 'professor' && senhaValue == 456) {
 
         console.log('Tudo certo!');
         alert(`lOGIN REALIZADO COM SUCESSO!`)
     }
 
-    else if( user == 'aluno' && senha == 123) {
+    else if( userValue == 'aluno' && senhaValue == 123) {
 
         console.log('Tudo certo!');
         alert(`lOGIN REALIZADO COM SUCESSO!`)
